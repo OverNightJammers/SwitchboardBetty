@@ -3,11 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace BzKovSoft.RopeGenerator
 {
+	#if UNITY_EDITOR
 	public sealed class RopeGenDialog : EditorWindow
 	{
 		IRopeMeshGenerator _meshGenerator;
@@ -132,4 +135,5 @@ namespace BzKovSoft.RopeGenerator
 			Cylinder,
 		}
 	}
+	#endif
 }
