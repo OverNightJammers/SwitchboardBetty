@@ -3588,6 +3588,7 @@ MonoBehaviour:
   healthBarPivot: {fileID: 1007776938}
   countdownText: {fileID: 402999437}
   gameStarted: 0
+  paragraphHangup1: []
 --- !u!114 &2042917152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5005,6 +5006,7 @@ MonoBehaviour:
   light: {fileID: 2104058427}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5034,6 +5036,7 @@ MonoBehaviour:
   light: {fileID: 2104058428}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5063,6 +5066,7 @@ MonoBehaviour:
   light: {fileID: 2104058433}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5092,6 +5096,7 @@ MonoBehaviour:
   light: {fileID: 2104058429}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5121,6 +5126,7 @@ MonoBehaviour:
   light: {fileID: 2104058430}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5150,6 +5156,7 @@ MonoBehaviour:
   light: {fileID: 2104058431}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5179,6 +5186,7 @@ MonoBehaviour:
   light: {fileID: 2104058432}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5208,6 +5216,7 @@ MonoBehaviour:
   light: {fileID: 2104058434}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5237,6 +5246,7 @@ MonoBehaviour:
   light: {fileID: 2104058435}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5266,6 +5276,7 @@ MonoBehaviour:
   light: {fileID: 2104058436}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5295,6 +5306,7 @@ MonoBehaviour:
   light: {fileID: 2104058437}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5324,6 +5336,7 @@ MonoBehaviour:
   light: {fileID: 2104058438}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5353,6 +5366,7 @@ MonoBehaviour:
   light: {fileID: 2104058439}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
@@ -5382,6 +5396,7 @@ MonoBehaviour:
   light: {fileID: 2104058440}
   isGrabbed: 0
   isBlinking: 0
+  onHold: 0
   gameStarted: 0
   waitTimer: 0
   currentTimer: 0
