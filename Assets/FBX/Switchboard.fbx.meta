@@ -101,6 +101,7 @@ ModelImporter:
     100186: Red_Light_1
     100188: Reciever_Plug_33
     100190: Reciever_Plug_34
+    100192: Name_Plates_
     400000: Green_Light
     400002: Green_Light_10
     400004: Green_Light_11
@@ -197,6 +198,7 @@ ModelImporter:
     400186: Red_Light_1
     400188: Reciever_Plug_33
     400190: Reciever_Plug_34
+    400192: Name_Plates_
     2300000: Green_Light
     2300002: Green_Light_10
     2300004: Green_Light_11
@@ -292,6 +294,7 @@ ModelImporter:
     2300184: Red_Light_1
     2300186: Reciever_Plug_33
     2300188: Reciever_Plug_34
+    2300190: Name_Plates_
     3300000: Green_Light
     3300002: Green_Light_10
     3300004: Green_Light_11
@@ -387,6 +390,7 @@ ModelImporter:
     3300184: Red_Light_1
     3300186: Reciever_Plug_33
     3300188: Reciever_Plug_34
+    3300190: Name_Plates_
     4300000: Switchboard
     4300002: Plug_2
     4300004: Plug_3
@@ -482,6 +486,7 @@ ModelImporter:
     4300184: Green_Light_1
     4300186: Reciever_Plug_33
     4300188: Reciever_Plug_34
+    4300190: Name_Plates_
   materials:
     importMaterials: 1
     materialName: 0
