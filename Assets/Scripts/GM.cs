@@ -17,6 +17,7 @@ public class GM : MonoBehaviour
 
 	public bool gameStarted = false;
 
+	public string[] paragraphHangup1;
 
 
 	private float health = 100;

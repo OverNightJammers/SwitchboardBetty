@@ -62,7 +62,7 @@ public class PlugScript : MonoBehaviour
 	void OnTriggerEnter(Collider coll)
 	{
 		if (coll.transform.name.Contains ("Reciever")) {
-				transform.localEulerAngles = new Vector3 (-108, transform.localEulerAngles.y, transform.localEulerAngles.z);
+			transform.localRotation = new Quaternion (-108, transform.localRotation.y, transform.localRotation.z, transform.localRotation.w);
 
 		} else if (coll.transform.name.Contains ("Hold") || coll.transform.name.Contains("Operator")) {
 		}
