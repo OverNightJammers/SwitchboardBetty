@@ -11,6 +11,7 @@ public class PlugScript : MonoBehaviour
 
 	bool beenGrabbed = false;
 	public bool isBlinking = false;
+	public bool onHold = false;
 	public bool gameStarted = false;
 	public float waitTimer = 10;
 	public float currentTimer = 0;
@@ -44,7 +45,7 @@ public class PlugScript : MonoBehaviour
 					}
 
 					if (!isGrabbed) {
-						StartCoroutine (GetMad ());
+						StartCoroutine (Waiting2Banswered ());
 					}
 				}
 			}
@@ -58,6 +59,20 @@ public class PlugScript : MonoBehaviour
 		}
 	}
 
+	void OnTriggerEnter(Collider coll)
+	{
+		if (coll.transform.name.Contains ("Reciever")) {
+				transform.localEulerAngles = new Vector3 (-108, transform.localEulerAngles.y, transform.localEulerAngles.z);
+
+		} else if (coll.transform.name.Contains ("Hold") || coll.transform.name.Contains("Operator")) {
+		}
+	}
+
+	void OnCollisonExit()
+	{
+		transform.localEulerAngles = new Vector3 (0, 0, 0);
+	}
+
 	float GetWaitTimer()
 	{
 		float wait = Random.Range (1, 10);
@@ -66,10 +81,21 @@ public class PlugScript : MonoBehaviour
 		return wait;
 	}
 
-	IEnumerator GetMad(){
+	IEnumerator Waiting2Banswered(){
 		while (!isGrabbed) 
 		{
-			yield return new WaitForSeconds (1);
+			yield return new WaitForSeconds (Random.Range(3,6));
+			GM.instance.TakeHit (.5f);
+		}
+
+	}
+
+
+
+	IEnumerator OnHold(){
+		while (onHold) 
+		{
+			yield return new WaitForSeconds (Random.Range(3,6));
 			GM.instance.TakeHit (.5f);
 		}
 
