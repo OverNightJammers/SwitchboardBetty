@@ -71,6 +71,7 @@ public class GM : MonoBehaviour
 		countdownText.text = "Begin";
 		gameStarted = true;
 		yield return new WaitForSeconds (1);
+		GetComponent<DragMe> ().enabled = true;
 		startPanel.SetActive (false);
 		countdownText.text = "3";
 	}

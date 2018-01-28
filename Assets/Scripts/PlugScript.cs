@@ -67,7 +67,7 @@ public class PlugScript : MonoBehaviour
 
 
 		} else if (coll.transform.name.Contains ("Hold") || coll.transform.name.Contains("Operator")) {
-			this.transform.localEulerAngles = new Vector3 (200, transform.localEulerAngles.y, transform.localEulerAngles.z);
+			this.transform.localEulerAngles = new Vector3 (180, transform.localEulerAngles.y, transform.localEulerAngles.z);
 		}
 	}
 
