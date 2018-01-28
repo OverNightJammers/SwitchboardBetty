@@ -9,7 +9,14 @@ public class HomePanel : MonoBehaviour
 		SceneManager.LoadScene (1);
 	}
 
+	public void OnHowToTouched()
+	{
+		SceneManager.LoadScene (2);
+	}
 
+	public void OnExitTouched(){
+		Application.Quit ();
+	}
 
 
 
