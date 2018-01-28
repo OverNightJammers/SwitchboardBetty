@@ -29,7 +29,7 @@ public class DragMe : MonoBehaviour
 			RaycastHit hit;
 
 			if (Physics.Raycast (mouseRay.origin, mouseRay.direction, out hit)) {
-				if (hit.transform.name.Contains("Plug")) {
+				if (hit.transform.name.Contains("aPlug_")) {
 					go = hit.transform.gameObject;
 					objPlane = new Plane (Camera.main.transform.forward * -1, go.transform.position);
 

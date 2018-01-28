@@ -62,15 +62,18 @@ public class PlugScript : MonoBehaviour
 	void OnTriggerEnter(Collider coll)
 	{
 		if (coll.transform.name.Contains ("Reciever")) {
-			transform.localRotation = new Quaternion (-108, transform.localRotation.y, transform.localRotation.z, transform.localRotation.w);
+
+			this.transform.localEulerAngles = new Vector3 (252, transform.localEulerAngles.y, transform.localEulerAngles.z);
+
 
 		} else if (coll.transform.name.Contains ("Hold") || coll.transform.name.Contains("Operator")) {
+			this.transform.localEulerAngles = new Vector3 (72, transform.localEulerAngles.y, transform.localEulerAngles.z);
 		}
 	}
 
-	void OnCollisonExit()
+	void OnTriggerExit()
 	{
-		transform.localEulerAngles = new Vector3 (0, 0, 0);
+		transform.localEulerAngles = new Vector3 (0, 180, 0);
 	}
 
 	float GetWaitTimer()
