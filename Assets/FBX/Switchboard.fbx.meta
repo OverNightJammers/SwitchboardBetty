@@ -97,6 +97,10 @@ ModelImporter:
     100178: Red_Light_9
     100180: //RootNode
     100182: Switchboard
+    100184: Green_Light_1
+    100186: Red_Light_1
+    100188: Reciever_Plug_33
+    100190: Reciever_Plug_34
     400000: Green_Light
     400002: Green_Light_10
     400004: Green_Light_11
@@ -189,6 +193,10 @@ ModelImporter:
     400178: Red_Light_9
     400180: Switchboard
     400182: //RootNode
+    400184: Green_Light_1
+    400186: Red_Light_1
+    400188: Reciever_Plug_33
+    400190: Reciever_Plug_34
     2300000: Green_Light
     2300002: Green_Light_10
     2300004: Green_Light_11
@@ -280,6 +288,10 @@ ModelImporter:
     2300176: Red_Light_8
     2300178: Red_Light_9
     2300180: Switchboard
+    2300182: Green_Light_1
+    2300184: Red_Light_1
+    2300186: Reciever_Plug_33
+    2300188: Reciever_Plug_34
     3300000: Green_Light
     3300002: Green_Light_10
     3300004: Green_Light_11
@@ -371,6 +383,10 @@ ModelImporter:
     3300176: Red_Light_8
     3300178: Red_Light_9
     3300180: Switchboard
+    3300182: Green_Light_1
+    3300184: Red_Light_1
+    3300186: Reciever_Plug_33
+    3300188: Reciever_Plug_34
     4300000: Switchboard
     4300002: Plug_2
     4300004: Plug_3
@@ -462,6 +478,10 @@ ModelImporter:
     4300176: Green_Light_12
     4300178: Green_Light_13
     4300180: Green_Light_14
+    4300182: Red_Light_1
+    4300184: Green_Light_1
+    4300186: Reciever_Plug_33
+    4300188: Reciever_Plug_34
   materials:
     importMaterials: 1
     materialName: 0
