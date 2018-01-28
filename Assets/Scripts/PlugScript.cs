@@ -67,10 +67,22 @@ public class PlugScript : MonoBehaviour
 
 
 		} else if (coll.transform.name.Contains ("Hold") || coll.transform.name.Contains("Operator")) {
-			this.transform.localEulerAngles = new Vector3 (72, transform.localEulerAngles.y, transform.localEulerAngles.z);
+			this.transform.localEulerAngles = new Vector3 (200, transform.localEulerAngles.y, transform.localEulerAngles.z);
 		}
 	}
 
+	void OnTriggerStay(Collider coll){
+		if (!isGrabbed) {
+
+			if (coll.name.Contains ("Hold") ) {
+				this.transform.localPosition = coll.transform.localPosition;
+			} else if (coll.name.Contains ("Operator")) {
+				this.transform.localPosition = coll.transform.localPosition;
+			} else if (coll.name.Contains ("Reciever")) {
+				this.transform.localPosition = coll.transform.localPosition;
+			}
+		}
+	}
 	void OnTriggerExit()
 	{
 		transform.localEulerAngles = new Vector3 (0, 180, 0);

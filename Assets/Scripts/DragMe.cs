@@ -29,10 +29,10 @@ public class DragMe : MonoBehaviour
 			RaycastHit hit;
 
 			if (Physics.Raycast (mouseRay.origin, mouseRay.direction, out hit)) {
-				if (hit.transform.name.Contains("aPlug_")) {
+				if (hit.transform.name.Contains("Plug")) {
 					go = hit.transform.gameObject;
 					objPlane = new Plane (Camera.main.transform.forward * -1, go.transform.position);
-
+					go.GetComponent<PlugScript> ().isGrabbed = true;
 					Ray mRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 					float rayDist;
 					objPlane.Raycast (mRay, out rayDist);
@@ -52,6 +52,7 @@ public class DragMe : MonoBehaviour
 
 		if (Input.GetMouseButtonUp (0) && go) 
 		{
+			go.GetComponent<PlugScript> ().isGrabbed = false;
 				go = null;
 		}
 	}	
